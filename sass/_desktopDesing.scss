@@ -42,13 +42,13 @@
       z-index: 200;
       .item_app1{
           margin-top: 20px;
-          width: 25%;
+          max-width: 350px;
           height: fit-content;
           display: flex;
           flex-direction: column;
           background: $white;
           border: $app-background solid 1px;
-          border-radius: 10px 10px 0 0;
+          border-radius: 30px;
           padding-top: 20px;
           box-shadow: 10px 10px 10px 1px rgba(128, 128, 128, 0.185);
           z-index: 200;
@@ -59,18 +59,30 @@
               height: 100px;
               width: 95%;
               margin: -10px auto;
+              .ellipsis-v{
+                  color: $white;
+                  position: absolute;
+                  top: 45%;
+                  right: 5%;
+              }
+              .angle-left{
+                  color: $white;
+                  position: absolute;
+                  top: 50%;
+                  left: 5%;
+                  font-size: 20px;
+              }
               .name{
                 margin: 0;
                 color: $white;
-                font-size: 17px;
             }
             .info{
                 color: $top-app-UI;
-                font-size: 14px;
             }
               .name, .info{
-                  margin-left: 70px;
-                  margin-top: 40px;
+                  margin-left: 90px;
+                  margin-top: 42px;
+                  font-size: 14px;
               }
 
               .avatar_img{
@@ -79,7 +91,7 @@
                   border-radius: 20px;
                   position: absolute;
                   top: 40%;
-                  left: 5%;
+                  left: 12%;
                   border: $white solid 1.5px;
               }
               .name::before{
@@ -170,6 +182,7 @@
               align-items: center;
               position: relative;
               #message{
+                  border: gray solid 2px;
                   width: 80%;
                   border-radius: 20px;
                   height: 40px;
